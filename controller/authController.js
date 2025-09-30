@@ -226,7 +226,6 @@ const resetPassword = async (req, res) => {
     if (password !== confirmPassword) {
       return res.status(401).json({ message: "Password do not match", success: false })
     }
-
     const checkOtp = await Seller.findOne({ otp })
     if (!checkOtp) {
       return res.status(409).json({ message: "Invalid OTP fail to reset password", success: false })
@@ -247,4 +246,4 @@ const resetPassword = async (req, res) => {
   }
 }
 
-module.exports = { createUser, loginUser, createSeller, sellerLogin, forgotSellerPassword, resendOtp, verifyOtp,resetPassword };
+module.exports = { createUser, loginUser, createSeller, sellerLogin, forgotSellerPassword, resendOtp, verifyOtp, resetPassword };
