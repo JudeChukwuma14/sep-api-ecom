@@ -1,0 +1,34 @@
+
+// User information
+//name 
+//email
+//password
+
+
+const userInfo = {
+    name: "Vikki",
+    email: "vikki@gmail.com",
+    password: "vikki001"
+}
+userInfo.email ="vikki@gmail.com"
+
+// seller information
+//businessName
+//email
+//password
+// number
+
+
+
+// product information
+// productName
+// productImage
+// productPrice
+// productDescription
+// sellerId (reference to the seller who added the product)
+// category
+// stockQuantity
+// createdAt
+// updatedAt
+
+//  from: `$Application Bot: <ebukajude14@gmail.com>`,
